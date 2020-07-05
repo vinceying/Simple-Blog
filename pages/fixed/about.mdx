@@ -1,0 +1,34 @@
+import Layout from 'lib/components/layout'
+import { Button } from '@zeit-ui/react'
+import { Fieldset } from '@zeit-ui/react'
+import { Keyboard } from '@zeit-ui/react'
+
+export const meta = {
+  title: '关于',
+  date: '',
+  description: '',
+}
+
+<Fieldset>
+  <Fieldset.Content style={{ paddingTop: '10pt', paddingBottom: '10pt' }}>
+    <h4>一些信息</h4>
+  </Fieldset.Content>
+  <Divider y={0} />
+  <Fieldset.Content>
+    <Fieldset.Title>关于本站</Fieldset.Title>
+    <p>之前使用的是 Cloud Studio 的 Pages 服务，可以通过使用动态网站，使用 WordPress 来搭建我的博客，但是后来由于相关服务的升级， Cloud Studio 停止了相关服务，网站也没有写什么内容。</p>
+    <p>由于我之前所在的两个论坛都相继关闭，我的一些帖子都没有备份。这对我来说是一大损失，于是打算搭建本站。使用 Github Pages+Hexo 框架，目的就是存一些我的文章和帖子。</p>
+    <Fieldset.Title>我的经历和愿望</Fieldset.Title>
+    <p><Keyboard>前技德 Remix 论坛超级版主 梦想赞助商</Keyboard><Keyboard>前智友论坛（安智）版主 撰稿</Keyboard><Keyboard>伪果粉</Keyboard></p>
+    <p>还在路上，希望能够一直热爱一些我所热爱的东西，也希望可以更加自律。同时也在培养自己的版权意识。之前也说了，主要是记录一下自己的文章和一些内容，佛系青年的佛系网站，没有追求什么访客量 ，当然也不会有什么访客量，主要为了给自己留点回忆。当前任务： 减肥。</p>
+    <Fieldset.Title>MDXJS</Fieldset.Title>
+    <p><Keyboard>next.js</Keyboard><Keyboard>@zeit-ui/react</Keyboard></p>
+    <p>得益于 next.js 与 @zeit-ui/react 的高性能优化与混合渲染，且可以在 Markdown 中使用 React 组件。</p>
+  </Fieldset.Content>
+  <Fieldset.Footer>
+    <small>对这个世界充满好奇心</small>
+  </Fieldset.Footer>
+</Fieldset>
+
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

@@ -1,0 +1,33 @@
+import Layout from 'lib/components/layout'
+import { Card } from '@zeit-ui/react'
+import { Note } from '@zeit-ui/react'
+import { Dot } from '@zeit-ui/react'
+import { Breadcrumbs } from '@zeit-ui/react'
+
+export const meta = {
+  title: '项目',
+  date: '',
+  description: '',
+}
+
+<p>
+    <Note label={false}>还在努力学习中，争取写更多的开源项目。</Note>
+</p>
+
+<Row style={{ flexWrap: 'wrap' }} justify="space-around">
+  <Card width="330px">
+    <h4>Hexo-Action-TencentCloudBase</h4>
+    <p>可以将 Hexo 的源文件部署推送到 Tencent CloudBase。</p>
+    <Card.Footer>
+      <a href="https://github.com/zeit-ui/react" target="_blank">在 GitHub 上查看源码</a>
+    </Card.Footer>
+  </Card>
+</Row>
+
+<p> <Dot style={{ marginRight: '20px' }} type="success">个人使用项目</Dot></p>
+
+- [Blog File](https://github.com/vinceying/blog-file) 存放博客文件
+- [Blog Source](https://github.com/vinceying/Blog-Source) Hexo 博客源文件
+- [Simple Blog](https://github.com/vinceying/Simple-Bloge) 简洁博客源文件
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

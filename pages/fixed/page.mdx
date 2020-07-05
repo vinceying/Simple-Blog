@@ -1,0 +1,39 @@
+import Layout from 'lib/components/layout'
+import { Button } from '@zeit-ui/react'
+import { Image } from '@zeit-ui/react'
+import { Fieldset } from '@zeit-ui/react'
+import { Link } from '@zeit-ui/react'
+
+export const meta = {
+  title: '页面',
+  date: '',
+  description: '',
+}
+
+<p>
+<Image.Browser url="https://i.vince.pub" >
+  <Image width="480" height="300" src="https://i.vince.pub/blog-file/photo/fbf8ecf9-cfda-4a58-9c8e-4c3936ae9eef.png" />
+</Image.Browser>
+</p>
+
+<p>
+<Fieldset>
+  <Fieldset.Title>不同于博客站，本站专注写作和简洁。</Fieldset.Title>
+  <Fieldset.Subtitle>有点审美疲劳了，本站专注于技术博客写作。没用过多复杂项目和乱七八糟的功能。</Fieldset.Subtitle>
+  <Fieldset.Footer>
+    <Fieldset.Footer.Status>
+      如何获取信息，请服务博客站点。
+    </Fieldset.Footer.Status>
+    <Fieldset.Footer.Actions>
+      <Button auto size="mini">了解了</Button>
+    </Fieldset.Footer.Actions>
+  </Fieldset.Footer>
+</Fieldset>
+</p>
+
+<>
+  <Link href="https://www.vince.pub/" icon>更多页面请查看主站</Link>
+  <Spacer y={.5} />
+</>
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>
