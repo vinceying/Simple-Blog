@@ -1,5 +1,5 @@
 on: push
-name: Publish Website
+name: Publish Blog to Website
 jobs:
    build:
     runs-on: ubuntu-latest
@@ -18,5 +18,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: "10.x"
-    
-    
+    - name: export blog file
+      run: |
+        npm run export
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      with:
+        ftp-server: ftp://47.100.41.120:21
+        ftp-username: blog
+        ftp-password: ${{ secrets.FTP_Blog_PASSWORD }}
+        local-dir: ./out/
