@@ -1,0 +1,40 @@
+import Layout from 'lib/components/layout'
+import {} from '@zeit-ui/react'
+import { Snippet } from '@zeit-ui/react'
+import { Display } from '@zeit-ui/react'
+
+export const meta = {
+  title: '为什么要创建这个简易博客',
+  date: '2020-07-12T08:11:42.542Z',
+  description: '',
+  image: '',
+}
+
+## 简易博客
+
+不同于主站博客，这个博客更多可能是技术分享和学习记录。作为一个**菜鸟**，在前端的学习道路上还在努力学习。相对于其它内容，我发现自己还是对前端比较感兴趣。正如状态所言，前端学习中，希望可以多掌握一些技术栈。
+
+## 关于博客
+
+使用 `unix.bio`，相对于主站博客来说，基于 `Next.js` 和 `ZEIT UI`，可以高效渲染和强大的组件库。另外，对于 `ZEIT UI` 的设计理念非常喜欢。
+
+## 常用命令
+
+新博客：
+
+<Snippet text="npm run post" width="500px" />
+
+预览：
+
+<Snippet text="npm run dev" width="500px" />
+
+设置 CDN
+
+<Snippet text="export CDN_PREFIX=https://cdn.vince.pub" width="500px" />
+
+生成静态文件
+
+<Snippet text="npm run export" width="500px" />
+
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

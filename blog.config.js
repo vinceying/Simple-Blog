@@ -1,7 +1,7 @@
 const BLOG = {
     author: 'Vince',
-    title: 'Vince',
-    description: "前端学习中，希望可以多掌握一些技术栈",
+    title: 'Vince - Vince.pub',
+    description: "前端学习中，希望可以多掌握一些技术栈。",
     summary: '前端学习中，希望可以多掌握一些技术栈',
     language: 'zh-cn',
     latestLimit: 5,
@@ -14,7 +14,6 @@ const BLOG = {
 
     email: 'admin@vince.pub',
     github: 'vinceying',
-    domain: 'i.vince.pub',
 
     googleAnalytics: '',
     cn: true,
